@@ -1,0 +1,9 @@
+<h1>Assignment 3</h1>
+<hr>
+<button class="btn btn-primary" (click)="onClickDisplayText()">Display details</button>
+<p *ngIf="displayText">Secret password: tuna</p>
+
+<div *ngFor="let history of clickHistory index as indexOf">
+    <p [ngStyle]="{backgroundColor: indexOf + 1 > 5? 'blue': 'transparent'}"
+        [ngClass]="{moreThanFive: indexOf + 1 > 5}">Button Clicked at: {{history}}</p>
+</div>
