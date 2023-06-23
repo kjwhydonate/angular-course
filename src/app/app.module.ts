@@ -4,14 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { WarningAlertComponent } from './warning-alert/warning-alert.component';
-import { SuccessAlertComponent } from './success-alert/success-alert.component';
-import { Assignment3Component } from './assignment3/assignment3.component';
+
+// Module 1 and 2
+// import { ServerComponent } from './module-1-and-2/server/server.component';
+// import { ServersComponent } from './module-1-and-2/servers/servers.component';
+// import { WarningAlertComponent } from './module-1-and-2/warning-alert/warning-alert.component';
+// import { SuccessAlertComponent } from './module-1-and-2/success-alert/success-alert.component';
+// import { Assignment3Component } from './assignment3/assignment3.component';
 
 @NgModule({
-  declarations: [AppComponent, ServerComponent, ServersComponent, WarningAlertComponent, SuccessAlertComponent, Assignment3Component],
+  declarations: [AppComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
