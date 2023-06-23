@@ -13,5 +13,10 @@ export class RecipeListComponent {
       'This is a test description',
       'https://picsum.photos/200'
     ),
+    new Recipe(
+      'A Test Recipe',
+      'This is a test description',
+      'https://picsum.photos/200'
+    ),
   ];
 }
