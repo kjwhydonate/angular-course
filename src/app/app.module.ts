@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
+import { CockpitComponent } from './cockpit/cockpit.component';
 
 // Module 3
 // import { HeaderComponent } from './module-3/header/header.component';
@@ -22,7 +23,7 @@ import { FormsModule } from '@angular/forms';
 // import { Assignment3Component } from './assignment3/assignment3.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CockpitComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
