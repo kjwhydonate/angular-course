@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
 import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 // Module 3
 // import { HeaderComponent } from './module-3/header/header.component';
@@ -23,7 +24,7 @@ import { CockpitComponent } from './cockpit/cockpit.component';
 // import { Assignment3Component } from './assignment3/assignment3.component';
 
 @NgModule({
-  declarations: [AppComponent, CockpitComponent],
+  declarations: [AppComponent, CockpitComponent, ServerElementComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
