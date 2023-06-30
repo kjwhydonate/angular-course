@@ -4,8 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
-import { CockpitComponent } from './cockpit/cockpit.component';
-import { ServerElementComponent } from './server-element/server-element.component';
+
+// Module 5
+// import { CockpitComponent } from './module-5/cockpit/cockpit.component';
+// import { ServerElementComponent } from './module-5/server-element/server-element.component';
 
 // Module 3
 // import { HeaderComponent } from './module-3/header/header.component';
@@ -24,7 +26,7 @@ import { ServerElementComponent } from './server-element/server-element.componen
 // import { Assignment3Component } from './assignment3/assignment3.component';
 
 @NgModule({
-  declarations: [AppComponent, CockpitComponent, ServerElementComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
