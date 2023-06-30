@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
-import { GameControlComponent } from './game-control/game-control.component';
-import { OddComponent } from './odd/odd.component';
-import { EvenComponent } from './even/even.component';
 
 // Module 5
+// import { GameControlComponent } from './module-5/assignment-4/game-control/game-control.component';
+// import { OddComponent } from './module-5/assignment-4/odd/odd.component';
+// import { EvenComponent } from './module-5/assignment-4/even/even.component';
 // import { CockpitComponent } from './module-5/cockpit/cockpit.component';
 // import { ServerElementComponent } from './module-5/server-element/server-element.component';
 
