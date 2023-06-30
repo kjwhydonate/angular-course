@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 // Module 5
 // import { CockpitComponent } from './module-5/cockpit/cockpit.component';
@@ -26,7 +29,7 @@ import { FormsModule } from '@angular/forms';
 // import { Assignment3Component } from './assignment3/assignment3.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, GameControlComponent, OddComponent, EvenComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
