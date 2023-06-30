@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-
 import { FormsModule } from '@angular/forms';
 
+
+import { HeaderComponent } from './module-6/header/header.component';
+import { RecipesComponent } from './module-6/recipes/recipes.component';
+import { RecipeDetailComponent } from './module-6/recipes/recipe-detail/recipe-detail.component';
+import { RecipeListComponent } from './module-6/recipes/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './module-6/recipes/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './module-6/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './module-6/shopping-list/shopping-edit/shopping-edit.component';
+
 // Module 5
-// import { GameControlComponent } from './module-5/assignment-4/game-control/game-control.component';
+// import { GameControlComponent } from './ngmodule-5/assignment-4/game-control/game-control.component';
 // import { OddComponent } from './module-5/assignment-4/odd/odd.component';
 // import { EvenComponent } from './module-5/assignment-4/even/even.component';
 // import { CockpitComponent } from './module-5/cockpit/cockpit.component';
@@ -29,9 +36,21 @@ import { FormsModule } from '@angular/forms';
 // import { Assignment3Component } from './assignment3/assignment3.component';
 
 @NgModule({
-  declarations: [AppComponent, GameControlComponent, OddComponent, EvenComponent],
-  imports: [BrowserModule, FormsModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
