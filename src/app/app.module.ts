@@ -2,15 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 
 
-import { HeaderComponent } from './module-6/header/header.component';
-import { RecipesComponent } from './module-6/recipes/recipes.component';
-import { RecipeDetailComponent } from './module-6/recipes/recipe-detail/recipe-detail.component';
-import { RecipeListComponent } from './module-6/recipes/recipe-list/recipe-list.component';
-import { RecipeItemComponent } from './module-6/recipes/recipe-list/recipe-item/recipe-item.component';
-import { ShoppingListComponent } from './module-6/shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './module-6/shopping-list/shopping-edit/shopping-edit.component';
+// Module 6
+// import { HeaderComponent } from './module-6/header/header.component';
+// import { RecipesComponent } from './module-6/recipes/recipes.component';
+// import { RecipeDetailComponent } from './module-6/recipes/recipe-detail/recipe-detail.component';
+// import { RecipeListComponent } from './module-6/recipes/recipe-list/recipe-list.component';
+// import { RecipeItemComponent } from './module-6/recipes/recipe-list/recipe-item/recipe-item.component';
+// import { ShoppingListComponent } from './module-6/shopping-list/shopping-list.component';
+// import { ShoppingEditComponent } from './module-6/shopping-list/shopping-edit/shopping-edit.component';
 
 // Module 5
 // import { GameControlComponent } from './ngmodule-5/assignment-4/game-control/game-control.component';
@@ -38,13 +40,7 @@ import { ShoppingEditComponent } from './module-6/shopping-list/shopping-edit/sh
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent
+    BasicHighlightDirective
   ],
   imports: [
     BrowserModule,
