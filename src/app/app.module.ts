@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
-import { HeaderComponent } from './module-8/header/header.component';
-import { RecipesComponent } from './module-8/recipes/recipes.component';
-import { RecipeListComponent } from './module-8/recipes/recipe-list/recipe-list.component';
-import { RecipeDetailComponent } from './module-8/recipes/recipe-detail/recipe-detail.component';
-import { RecipeItemComponent } from './module-8/recipes/recipe-list/recipe-item/recipe-item.component';
-import { ShoppingListComponent } from './module-8/shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './module-8/shopping-list/shopping-edit/shopping-edit.component';
-import { DropdownDirective } from './module-8/shared/dropdown.directive';
+import { AccountComponent } from './module-9/account/account.component';
+import { NewAccountComponent } from './module-9/new-account/new-account.component';
+
+// Module 8
+// import { HeaderComponent } from './module-8/header/header.component';
+// import { RecipesComponent } from './module-8/recipes/recipes.component';
+// import { RecipeListComponent } from './module-8/recipes/recipe-list/recipe-list.component';
+// import { RecipeDetailComponent } from './module-8/recipes/recipe-detail/recipe-detail.component';
+// import { RecipeItemComponent } from './module-8/recipes/recipe-list/recipe-item/recipe-item.component';
+// import { ShoppingListComponent } from './module-8/shopping-list/shopping-list.component';
+// import { ShoppingEditComponent } from './module-8/shopping-list/shopping-edit/shopping-edit.component';
+// import { DropdownDirective } from './module-8/shared/dropdown.directive';
 
 // Module 7
 // import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
@@ -52,14 +56,8 @@ import { DropdownDirective } from './module-8/shared/dropdown.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent,
-    DropdownDirective
+    AccountComponent,
+    NewAccountComponent
   ],
   imports: [
     BrowserModule,
