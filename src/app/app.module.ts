@@ -2,10 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
-import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
-import { UnlessDirective } from './unless.directive';
 
+import { HeaderComponent } from './module-8/header/header.component';
+import { RecipesComponent } from './module-8/recipes/recipes.component';
+import { RecipeListComponent } from './module-8/recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './module-8/recipes/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './module-8/recipes/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './module-8/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './module-8/shopping-list/shopping-edit/shopping-edit.component';
+import { DropdownDirective } from './module-8/shared/dropdown.directive';
+
+// Module 7
+// import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+// import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+// import { UnlessDirective } from './unless.directive';
 
 // Module 6
 // import { HeaderComponent } from './module-6/header/header.component';
@@ -42,9 +52,14 @@ import { UnlessDirective } from './unless.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    BasicHighlightDirective,
-    BetterHighlightDirective,
-    UnlessDirective
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

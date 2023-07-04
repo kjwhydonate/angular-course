@@ -1,24 +1,9 @@
+<app-header (featureSelected)="onNavigate($event)"></app-header>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <button class="btn btn-primary" (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
-      <br><br>
-      <ul class="list-group" *ngFor="let number of numbers">
-        <li class="list-group-item">
-          {{ number }}
-        </li>
-      </ul>
-      <ng-template [ngIf]="onlyOdd">
-        <p>Only odd</p>
-      </ng-template>
-      <p appBasicHighlight>Style me with basic directive.</p>
-      <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Style me with basic directive.</p>
-      <div [ngSwitch]="value">
-        <p *ngSwitchCase="5">The value is 5</p>
-        <p *ngSwitchCase="10">The value is 10</p>
-        <p *ngSwitchDefault>The is the default value</p>
-      </div>
-
+    <div class="col-md-12">
+      <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
     </div>
   </div>
 </div>
