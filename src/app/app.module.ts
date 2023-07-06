@@ -3,16 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
+// Module 11
+import { HomeComponent } from './module-11/home/home.component';
+import { UsersComponent } from './module-11/users/users.component';
+import { ServersComponent } from './module-11/servers/servers.component';
+import { UserComponent } from './module-11/users/user/user.component';
+import { EditServerComponent } from './module-11/servers/edit-server/edit-server.component';
+import { ServerComponent } from './module-11/servers/server/server.component';
+import { ServersService } from './module-11/servers/servers.service';
+
+
 // Module 10
-import { HeaderComponent } from './module-10/header/header.component';
-import { RecipesComponent } from './module-10/recipes/recipes.component';
-import { RecipeListComponent } from './module-10/recipes/recipe-list/recipe-list.component';
-import { RecipeDetailComponent } from './module-10/recipes/recipe-detail/recipe-detail.component';
-import { RecipeItemComponent } from './module-10/recipes/recipe-list/recipe-item/recipe-item.component';
-import { ShoppingListComponent } from './module-10/shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './module-10/shopping-list/shopping-edit/shopping-edit.component';
-import { DropdownDirective } from './module-10/shared/dropdown.directive';
-import { ShoppingListService } from './module-10/shopping-list/shopping-list.service';
+// import { HeaderComponent } from './module-10/header/header.component';
+// import { RecipesComponent } from './module-10/recipes/recipes.component';
+// import { RecipeListComponent } from './module-10/recipes/recipe-list/recipe-list.component';
+// import { RecipeDetailComponent } from './module-10/recipes/recipe-detail/recipe-detail.component';
+// import { RecipeItemComponent } from './module-10/recipes/recipe-list/recipe-item/recipe-item.component';
+// import { ShoppingListComponent } from './module-10/shopping-list/shopping-list.component';
+// import { ShoppingEditComponent } from './module-10/shopping-list/shopping-edit/shopping-edit.component';
+// import { DropdownDirective } from './module-10/shared/dropdown.directive';
+// import { ShoppingListService } from './module-10/shopping-list/shopping-list.service';
 
 // Module 9
 // import { AccountComponent } from './module-9/account/account.component';
@@ -68,20 +78,18 @@ import { ShoppingListService } from './module-10/shopping-list/shopping-list.ser
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    RecipesComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent,
-    DropdownDirective
+    HomeComponent,
+    UsersComponent,
+    ServersComponent,
+    UserComponent,
+    EditServerComponent,
+    ServerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
   ],
-  providers: [ShoppingListService],
+  providers: [ServersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
