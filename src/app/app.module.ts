@@ -11,6 +11,13 @@ import { UserComponent } from './module-11/users/user/user.component';
 import { EditServerComponent } from './module-11/servers/edit-server/edit-server.component';
 import { ServerComponent } from './module-11/servers/server/server.component';
 import { ServersService } from './module-11/servers/servers.service';
+import { PageNotFoundComponent } from './module-11/page-not-found/page-not-found.component';
+import { AppRoutingModule } from './module-11/app-routing.module';
+import { AuthService } from './module-11/auth.service';
+import { AuthGuard } from './module-11/auth-guard.service';
+import { CanDeactivateGuard } from './module-11/servers/edit-server/can-deactivate-guard.service';
+import { ErrorPageComponent } from './module-11/error-page/error-page.component';
+import { ServerResolver } from './module-11/servers/server/server-resolver.service';
 
 
 // Module 10
@@ -83,13 +90,19 @@ import { ServersService } from './module-11/servers/servers.service';
     ServersComponent,
     UserComponent,
     EditServerComponent,
-    ServerComponent
+    ServerComponent,
+    UserComponent,
+    EditServerComponent,
+    ServerComponent,
+    PageNotFoundComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule
   ],
-  providers: [ServersService],
+  providers: [ServersService, AuthService, AuthGuard, CanDeactivateGuard, ServerResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
