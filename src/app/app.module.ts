@@ -3,21 +3,35 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
+// Module 12
+import { HeaderComponent } from './module-12/header/header.component';
+import { RecipesComponent } from './module-12/recipes/recipes.component';
+import { RecipeListComponent } from './module-12/recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './module-12/recipes/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './module-12/recipes/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './module-12/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './module-12/shopping-list/shopping-edit/shopping-edit.component';
+import { DropdownDirective } from './module-12/shared/dropdown.directive';
+import { ShoppingListService } from './module-12/shopping-list/shopping-list.service';
+import { AppRoutingModule } from './module-12/app-routing.module';
+import { RecipeStartComponent } from './module-12/recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './module-12/recipes/recipe-edit/recipe-edit.component';
+
 // Module 11
-import { HomeComponent } from './module-11/home/home.component';
-import { UsersComponent } from './module-11/users/users.component';
-import { ServersComponent } from './module-11/servers/servers.component';
-import { UserComponent } from './module-11/users/user/user.component';
-import { EditServerComponent } from './module-11/servers/edit-server/edit-server.component';
-import { ServerComponent } from './module-11/servers/server/server.component';
-import { ServersService } from './module-11/servers/servers.service';
-import { PageNotFoundComponent } from './module-11/page-not-found/page-not-found.component';
-import { AppRoutingModule } from './module-11/app-routing.module';
-import { AuthService } from './module-11/auth.service';
-import { AuthGuard } from './module-11/auth-guard.service';
-import { CanDeactivateGuard } from './module-11/servers/edit-server/can-deactivate-guard.service';
-import { ErrorPageComponent } from './module-11/error-page/error-page.component';
-import { ServerResolver } from './module-11/servers/server/server-resolver.service';
+// import { HomeComponent } from './module-11/home/home.component';
+// import { UsersComponent } from './module-11/users/users.component';
+// import { ServersComponent } from './module-11/servers/servers.component';
+// import { UserComponent } from './module-11/users/user/user.component';
+// import { EditServerComponent } from './module-11/servers/edit-server/edit-server.component';
+// import { ServerComponent } from './module-11/servers/server/server.component';
+// import { ServersService } from './module-11/servers/servers.service';
+// import { PageNotFoundComponent } from './module-11/page-not-found/page-not-found.component';
+// import { AppRoutingModule } from './module-11/app-routing.module';
+// import { AuthService } from './module-11/auth.service';
+// import { AuthGuard } from './module-11/auth-guard.service';
+// import { CanDeactivateGuard } from './module-11/servers/edit-server/can-deactivate-guard.service';
+// import { ErrorPageComponent } from './module-11/error-page/error-page.component';
+// import { ServerResolver } from './module-11/servers/server/server-resolver.service';
 
 
 // Module 10
@@ -85,24 +99,23 @@ import { ServerResolver } from './module-11/servers/server/server-resolver.servi
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    UsersComponent,
-    ServersComponent,
-    UserComponent,
-    EditServerComponent,
-    ServerComponent,
-    UserComponent,
-    EditServerComponent,
-    ServerComponent,
-    PageNotFoundComponent,
-    ErrorPageComponent
+    HeaderComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    DropdownDirective,
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule
   ],
-  providers: [ServersService, AuthService, AuthGuard, CanDeactivateGuard, ServerResolver],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
